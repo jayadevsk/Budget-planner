@@ -80,8 +80,8 @@ function generatePlans(){
             transport: transport * 1.2,
             utilities: utilities,
             entertainment: remaining * 0.20,
-            travel: remaining * 0.20,
-            emi: remaining * 0.20,
+            travel: remaining * 0.15,
+            emi: remaining * 0.25,
             savings: remaining * 0.08,
             investment: remaining * 0.07
         };
@@ -108,11 +108,11 @@ function generatePlans(){
 
             <p>Groceries: ${show(range(data.groceries))}</p>
             <p>Essentials: ${show(range(data.essentials))}</p>
-            <p>Medical: ${show(range(data.medical))}</p>
+            <p>Medical & Healthcare: ${show(range(data.medical))}</p>
             <p>Transport: ${show(range(data.transport))}</p>
             <p>Utilities: ${show(range(data.utilities))}</p>
 
-            <p><b>Entertainment:</b> ${show(range(data.entertainment))}</p>
+            <p><b>Weekends & Entertainment:</b> ${show(range(data.entertainment))}</p>
             <p><b>Travel:</b> ${show(range(data.travel))}</p>
 
             <p><b>EMI:</b> ${show(range(data.emi))}</p>
