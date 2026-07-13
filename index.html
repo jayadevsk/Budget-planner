@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Family Budget Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>💰 Smart Family Budget Dashboard</h1>
+
+    <div class="input-card">
+
+        <input type="number" id="income" placeholder="Monthly Income (₹)">
+        <input type="number" id="members" placeholder="Number of Family Members">
+
+        <select id="houseType">
+            <option value="own">Own House</option>
+            <option value="rent">Rental House</option>
+        </select>
+
+        <button onclick="generatePlans()">Generate Budget Plans</button>
+
+    </div>
+
+    <div id="result"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
